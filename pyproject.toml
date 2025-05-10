@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rotation-plots3d"
+version = "0.0.1"
+authors = [
+  { name="John Glauber", email="johnbglauber@gmail.com" },
+]
+description = """A package to process x, y, z, roll, pitch, yaw data."""
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/jglauber/3dplots"
+Issues = "https://github.com/jglauber/3dplots/issues"
